@@ -2,7 +2,7 @@ import Link from 'next/link'
 import styled from 'styled-components'
 import { CollorPalette } from '../../libs/Colors'
 import { Categories } from '../../mock_data/categories'
-import { Container } from '../styles'
+import Container from './Container'
 
 const AppNavContainer = styled.nav`
   display: flex;

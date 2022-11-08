@@ -1,7 +1,7 @@
 import styled from 'styled-components'
-import { SCREEN_SIZE } from '../libs/Media'
+import { SCREEN_SIZE } from '../../libs/Media'
 
-export const Container = styled.div`
+const Container = styled.div`
   padding: 0 2rem;
 
   ${SCREEN_SIZE.From.Hd} {
@@ -10,3 +10,5 @@ export const Container = styled.div`
     margin-right: auto;
   }
 `
+
+export default Container
