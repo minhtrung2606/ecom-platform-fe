@@ -1,13 +1,10 @@
 import styled from 'styled-components'
 
 export const AddHeaderContainer = styled.div`
-  position: relative;
-  padding: 1rem 0;
+  padding: 1.5rem 0 1rem;
 `
 
-export const StyledLogo = styled.div`
-  position: relative;
+export const StyledLogo = styled.img`
   display: inline-block;
-  width: 8rem;
-  height: 5rem;
+  width: 9rem;
 `
