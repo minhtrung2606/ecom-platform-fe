@@ -1,5 +1,9 @@
+/**
+ * Follow https://m2.material.io/ to build the palette
+ */
+
 export const CollorPalette = {
-  BackgroundColor: '#f6f6f6',
+  BackgroundColor: '#eaeaea',
 
   Primary: '#440b54',
   PrimaryLight: '#723981',
