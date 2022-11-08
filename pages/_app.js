@@ -1,7 +1,7 @@
-import '../styles/globals.css'
 import { Oswald } from '@next/font/google'
+import '../styles/globals.css'
 
-const appFont = Oswald({})
+const appFont = Oswald({ subsets: ['utf-8'] })
 
 function MyApp({ Component, pageProps }) {
   return (
