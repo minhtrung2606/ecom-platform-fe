@@ -36,17 +36,11 @@ const AppNav = () => (
             key={`${cat.id}-${cat.slug}`}
             data-testid="nav-item"
           >
-            <Link href={`/category/${encodeURIComponent(cat.slug)}`}>{cat.name}</Link>
+            <Link href={`/category/${encodeURIComponent(cat.slug)}`}>
+              {cat.name}
+            </Link>
           </StyledNavItem>
         ))}
-        {/* <StyledNavItem>Hoa tươi</StyledNavItem>
-        <StyledNavItem>Hoa sinh nhật</StyledNavItem>
-        <StyledNavItem>Hoa khai trương</StyledNavItem>
-        <StyledNavItem>Hoa cưới</StyledNavItem>
-        <StyledNavItem>Hoa chia buồn</StyledNavItem>
-        <StyledNavItem>Hoa dịp lễ</StyledNavItem>
-        <StyledNavItem>Trái cây</StyledNavItem>
-        <StyledNavItem>Quà tặng</StyledNavItem> */}
       </StyledNav>
     </Container>
   </AppNavContainer>
