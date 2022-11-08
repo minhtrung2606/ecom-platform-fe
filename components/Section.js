@@ -9,6 +9,7 @@ const SectionContainer = styled.section`
 
 const SectionHeader = styled.header`
   .title {
+    margin-top: 0;
     color: ${CollorPalette.Primary};
     font-size: 2rem;
   }
@@ -16,7 +17,7 @@ const SectionHeader = styled.header`
 
 const SectionContent = styled.div`
   font-size: 1.125rem;
-  color: #333333;
+  color: ${CollorPalette.TextColorOnWhite};
 `
 
 const SectionView = ({ title, children }) => (

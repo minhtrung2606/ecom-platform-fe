@@ -9,7 +9,7 @@ const AppNavContainer = styled.nav`
   align-items: center;
   justify-content: center;
   background-color: ${CollorPalette.Primary};
-  color: #ffffff;
+  color: ${CollorPalette.TextColorOnPrimary};
 `
 
 const StyledNav = styled.ul`
