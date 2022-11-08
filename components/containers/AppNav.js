@@ -20,7 +20,6 @@ const StyledNav = styled.ul`
 
 const StyledNavItem = styled.li`
   display: inline-block;
-  font-weight: 100;
   font-size: 1rem;
   text-transform: uppercase;
 

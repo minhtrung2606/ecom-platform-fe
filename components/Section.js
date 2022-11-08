@@ -4,9 +4,8 @@ import { CollorPalette } from '../libs/Colors'
 import Container from "./containers/Container"
 
 const SectionContainer = styled.section`
-  padding: 2rem 0;
+  padding: 2.5rem 0;
   background-color: ${props => props.bgColor || 'inherit'};
-  font-weight: 100;
 `
 
 const SectionHeader = styled.header`
