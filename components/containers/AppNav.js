@@ -5,6 +5,9 @@ import { Categories } from '../../mock_data/categories'
 import { Container } from '../styles'
 
 const AppNavContainer = styled.nav`
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: ${CollorPalette.Primary};
   color: #ffffff;
 `
