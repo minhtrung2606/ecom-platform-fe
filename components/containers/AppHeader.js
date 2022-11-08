@@ -10,7 +10,7 @@ const AddHeaderContainer = styled.div`
 
 export const StyledLogo = styled.img`
   display: inline-block;
-  width: 9rem;
+  width: 10rem;
 `
 
 const AppHeader = () => (
