@@ -3,8 +3,8 @@ import styled from "styled-components";
 const FlexWrapper = styled.div`
   display: flex;
   flex-direction: ${props => props.direction || 'row'};
-  align-items: center;
-  justify-content: center;
+  align-items: ${props => props.alignItems || 'center'};
+  justify-content: ${props => props.justifyContent || 'center'};
 
   .flex-wrapper-item {
     flex: 1;
