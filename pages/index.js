@@ -20,7 +20,7 @@ export default function Home() {
       </Section>
       <Section
         variants={{
-          padding: '8rem 0',
+          padding: '6rem 0',
           bgColor: CollorPalette.BaseSecondary50,
         }}
       >
