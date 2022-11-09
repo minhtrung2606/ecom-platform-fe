@@ -2,36 +2,31 @@ import App from '../components/App'
 import Banners from '../components/Banners'
 import Card from '../components/Card'
 import FlexWrapper from '../components/FlexWrapper'
+import ProductCardList from '../components/ProductCardList'
 import Section from '../components/Section'
-import { CollorPalette } from '../libs/Colors'
+import Services from '../components/Services'
+import { ColorPalette } from '../libs/Colors'
 
 export default function Home() {
   return (
     <App>
       <Banners />
       <Section title="Sản phẩm mới">
-        <div>Section(Sản phẩm mới)</div>
+        <ProductCardList products={[1, 2, 3, 4]}/>
       </Section>
       <Section title="Giao nhanh Quận 7">
-        <div>Section(Giao nhanh Quận 7)</div>
+        <ProductCardList products={[1, 2, 3]}/>
       </Section>
       <Section title="Quan tâm nhiều nhất">
-        <div>Section(Quan tâm nhiều nhất)</div>
+        <ProductCardList products={[1, 2, 3, 4, 5]}/>
       </Section>
       <Section
         variants={{
           padding: '6rem 0',
-          bgColor: CollorPalette.BaseSecondary50,
+          bgColor: ColorPalette.BaseSecondary100,
         }}
       >
-        <FlexWrapper className="width-by-children" quantity={4}>
-          <Card title="Miễn phí vận chuyển" icon="truck">
-            Khi giao nội thành Thành phố Hồ Chí Minh
-          </Card>
-          <Card title="Miễn phí đổi - Bảo hành 03 ngày" icon="arrow-left-right">
-            Sẵn sàng hỗ trợ 24/7
-          </Card>
-        </FlexWrapper>
+        <Services />
       </Section>
       <Section title="Khách hàng nói về Queen Flowers" centerTitle>
         <div>Section(Khách hàng nói về Queen Flowers)</div>

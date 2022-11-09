@@ -3,7 +3,7 @@
  * https://m2.material.io/design/color/the-color-system.html#tools-for-picking-colors
  */
 
-export const CollorPalette = {
+export const ColorPalette = {
   BasePrimary900: '#440b54',
   BasePrimary800: '#5e1264',
   BasePrimary700: '#6d166d',
@@ -49,4 +49,5 @@ export const CollorPalette = {
   BaseRed50: '#ffebee',
 
   White: '#ffffff',
+  WhiteSmoke: 'whitesmoke',
 }

@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import styled from 'styled-components'
-import { CollorPalette } from '../../libs/Colors'
+import { ColorPalette } from '../../libs/Colors'
 import { Categories } from '../../mock_data/categories'
 import Container from './Container'
 
@@ -8,7 +8,7 @@ const AppNavContainer = styled.nav`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: ${CollorPalette.BasePrimary900};
+  background-color: ${ColorPalette.BasePrimary900};
 `
 
 const StyledNav = styled.ul`
@@ -25,7 +25,7 @@ const StyledNavItem = styled.li`
     display: inline-block;
     padding: 1rem;
     text-decoration: none;
-    color: ${CollorPalette.White};
+    color: ${ColorPalette.White};
   }
 `
 

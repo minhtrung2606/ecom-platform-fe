@@ -1,41 +1,48 @@
 import styled from 'styled-components'
-import { CollorPalette } from '../libs/Colors'
+import { ColorPalette } from '../libs/Colors'
 import FlexWrapper from './FlexWrapper'
 import Icon from './Icon'
 
 const CardWrapper = styled.div`
-  background-color: ${CollorPalette.BaseSecondary400};
+  background-color: ${ColorPalette.BaseSecondary400};
   padding: 2rem 1rem;
   border-radius: 1.2rem;
+  height: ${props => props.fullHeight ? '100%' : 'auto'};
 `
 
 const CardTitle = styled.h3`
   margin: 0;
-  color: ${CollorPalette.White};
+  color: ${ColorPalette.White};
+  text-align: center;
+  margin-top: ${props => props.hasIcon ? '1.5rem' : 0};
 `
 
 const CardBody = styled.div`
-  color: ${CollorPalette.White};
+  color: ${ColorPalette.WhiteSmoke};
+  text-align: center;
+  margin-top: 0.5rem;
 `
 
-const Card = ({ title, children, icon }) => (
-  <CardWrapper className="flex-wrapper-item">
-    <FlexWrapper direction="column">
+const Card = ({ title, children, icon, fullHeight }) => (
+  <CardWrapper fullHeight={fullHeight}>
+    <div className="d-flex flex-column align-items-center justify-content-start">
       {icon && (
         <Icon
           icon={icon}
           rounded
-          bgColor={CollorPalette.White}
-          color={CollorPalette.BaseSecondary400}
+          bgColor={ColorPalette.White}
+          color={ColorPalette.BaseSecondary400}
         />
       )}
       {title && (
-        <CardTitle>{title}</CardTitle>
+        <CardTitle hasIcon={!!icon}>
+          <strong>{title}</strong>
+        </CardTitle>
       )}
       <CardBody>
         {children}
       </CardBody>
-    </FlexWrapper>
+    </div>
   </CardWrapper>
 )
 

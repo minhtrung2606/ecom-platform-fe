@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { CollorPalette } from '../libs/Colors'
+import { ColorPalette } from '../libs/Colors'
 
 const StyledIconWrapper = styled.span`
   &.fully-rounded {
@@ -7,7 +7,7 @@ const StyledIconWrapper = styled.span`
     height: 4rem;
     border-radius: 100%;
     position: relative;
-    background: ${props => props.bgColor || CollorPalette.BasePrimary900};
+    background: ${props => props.bgColor || ColorPalette.BasePrimary900};
     display: flex;
     align-items: center;
     justify-content: center;
@@ -15,7 +15,7 @@ const StyledIconWrapper = styled.span`
 `
 
 const StyledIcon = styled.i`
-  color: ${props => props.color || CollorPalette.White};
+  color: ${props => props.color || ColorPalette.White};
 `
 
 const Icon = ({ icon, color, bgColor, rounded }) => (
