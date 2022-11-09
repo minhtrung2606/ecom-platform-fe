@@ -1,4 +1,3 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
 import App from '../components/App'
 import Banners from '../components/Banners'
 import Card from '../components/Card'

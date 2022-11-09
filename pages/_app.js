@@ -1,4 +1,5 @@
 import { Oswald } from '@next/font/google'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/globals.css'
 
 const appFont = Oswald({ subsets: ['utf-8'], weight: '200' })
