@@ -23,7 +23,7 @@ export default function Home() {
       <Section
         variants={{
           padding: '6rem 0',
-          bgColor: ColorPalette.BaseSecondary100,
+          bgColor: ColorPalette.BaseGray300,
         }}
       >
         <Services />
