@@ -11,7 +11,7 @@ const SectionContainer = styled.section`
 const SectionHeader = styled.header`
   .title {
     margin-top: 0;
-    color: ${props => props.color || CollorPalette.BasePrimary500};
+    color: ${props => props.color || CollorPalette.BaseGray900};
     font-size: 2rem;
   }
 `

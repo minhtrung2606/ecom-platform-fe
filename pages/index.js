@@ -21,14 +21,14 @@ export default function Home() {
       <Section
         variants={{
           padding: '8rem 0',
-          bgColor: CollorPalette.BaseGray200,
+          bgColor: CollorPalette.BaseSecondary50,
         }}
       >
         <FlexWrapper className="width-by-children" quantity={4}>
-          <Card title="Miễn phí vận chuyển">
+          <Card title="Miễn phí vận chuyển" icon="truck">
             Khi giao nội thành Thành phố Hồ Chí Minh
           </Card>
-          <Card title="Miễn phí đổi - Bảo hành 03 ngày">
+          <Card title="Miễn phí đổi - Bảo hành 03 ngày" icon="arrow-left-right">
             Sẵn sàng hỗ trợ 24/7
           </Card>
         </FlexWrapper>

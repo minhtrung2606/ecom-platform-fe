@@ -11,6 +11,7 @@ function MyApp({ Component, pageProps }) {
           font-family: ${appFont.style.fontFamily}!important;
         }
       `}</style>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
       <Component {...pageProps} />
     </>
   )
