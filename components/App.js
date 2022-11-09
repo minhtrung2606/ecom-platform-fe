@@ -3,7 +3,6 @@ import React from 'react'
 import AppFooter from './containers/AppFooter'
 import AppHeader from './containers/AppHeader'
 import AppNav from './containers/AppNav'
-// import { SSRProvider } from 'react-bootstrap'
 
 const App = ({ children }) => (
   <React.Fragment>

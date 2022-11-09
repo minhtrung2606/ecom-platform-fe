@@ -10,13 +10,13 @@ const AppNavContainer = styled.nav`
   justify-content: center;
   background-color: ${CollorPalette.BasePrimary900};
   color: ${CollorPalette.White};
-`;
+`
 
 const StyledNav = styled.ul`
   padding: 0;
   list-style-type: none;
   margin: 0 -1rem;
-`;
+`
 
 const StyledNavItem = styled.li`
   display: inline-block;
@@ -27,11 +27,7 @@ const StyledNavItem = styled.li`
     display: inline-block;
     padding: 1rem;
   }
-`;
-
-const StyledNavLink = styled.span`
-  color: ${CollorPalette.White};
-`;
+`
 
 const AppNav = () => (
   <AppNavContainer data-testid="app-nav">
@@ -42,8 +38,8 @@ const AppNav = () => (
             key={`${cat.id}-${cat.slug}`}
             data-testid="nav-item"
           >
-            <Link href={`/category/${encodeURIComponent(cat.slug)}`} style={{textDecoration: 'none'}}>
-              <StyledNavLink>{cat.name}</StyledNavLink>
+            <Link href={`/category/${encodeURIComponent(cat.slug)}`}>
+              {cat.name}
             </Link>
           </StyledNavItem>
         ))}
