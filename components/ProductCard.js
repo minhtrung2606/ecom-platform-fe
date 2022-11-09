@@ -5,7 +5,8 @@ const ProductCardWrapper = styled.a`
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   padding: 2rem 0rem;
-  border-radius: 0.8rem;
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
   background: ${ColorPalette.BaseGray100};
   height: 100%;
   box-shadow: 0 .125rem .25rem ${ColorPalette.BaseGray400};
