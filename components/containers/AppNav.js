@@ -8,8 +8,8 @@ const AppNavContainer = styled.nav`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: ${CollorPalette.Primary};
-  color: ${CollorPalette.TextColorOnPrimary};
+  background-color: ${CollorPalette.BasePrimary900};
+  color: ${CollorPalette.White};
 `
 
 const StyledNav = styled.ul`
