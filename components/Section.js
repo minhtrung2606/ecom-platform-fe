@@ -12,12 +12,10 @@ const SectionHeader = styled.header`
   .title {
     margin-top: 0;
     color: ${props => props.color || CollorPalette.BaseGray900};
-    font-size: 2rem;
   }
 `
 
 const SectionContent = styled.div`
-  font-size: 1.125rem;
   color: ${props => props.color || CollorPalette.BaseGray700};
 `
 
@@ -26,7 +24,7 @@ const SectionView = ({ title, children, variants }) => (
     <Container>
       {title && (
         <SectionHeader color={variants?.color}>
-          <h1 className="title">{title}</h1>
+          <h2 className="title">{title}</h2>
         </SectionHeader>
       )}
       <SectionContent color={variants?.color}>

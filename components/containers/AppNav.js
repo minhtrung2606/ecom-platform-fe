@@ -9,7 +9,6 @@ const AppNavContainer = styled.nav`
   align-items: center;
   justify-content: center;
   background-color: ${CollorPalette.BasePrimary900};
-  color: ${CollorPalette.White};
 `
 
 const StyledNav = styled.ul`
@@ -20,12 +19,13 @@ const StyledNav = styled.ul`
 
 const StyledNavItem = styled.li`
   display: inline-block;
-  font-size: 1rem;
   text-transform: uppercase;
 
   a {
     display: inline-block;
     padding: 1rem;
+    text-decoration: none;
+    color: ${CollorPalette.White};
   }
 `
 

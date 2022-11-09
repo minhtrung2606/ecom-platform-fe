@@ -9,7 +9,7 @@ const CardWrapper = styled.div`
   border-radius: 1.2rem;
 `
 
-const CardTitle = styled.h2`
+const CardTitle = styled.h3`
   margin: 0;
   color: ${CollorPalette.White};
 `
@@ -21,7 +21,14 @@ const CardBody = styled.div`
 const Card = ({ title, children, icon }) => (
   <CardWrapper className="flex-wrapper-item">
     <FlexWrapper direction="column">
-      {icon && <Icon icon={icon} rounded bgColor={CollorPalette.White} color={CollorPalette.BaseSecondary400} />}
+      {icon && (
+        <Icon
+          icon={icon}
+          rounded
+          bgColor={CollorPalette.White}
+          color={CollorPalette.BaseSecondary400}
+        />
+      )}
       {title && (
         <CardTitle>{title}</CardTitle>
       )}

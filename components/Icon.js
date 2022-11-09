@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { CollorPalette } from '../libs/Colors'
 
 const StyledIconWrapper = styled.span`
-  &.rounded {
+  &.fully-rounded {
     width: 4rem;
     height: 4rem;
     border-radius: 100%;
@@ -20,7 +20,7 @@ const StyledIcon = styled.i`
 
 const Icon = ({ icon, color, bgColor, rounded }) => (
   <StyledIconWrapper
-    className={rounded && 'rounded'}
+    className={rounded && 'fully-rounded'}
     bgColor={bgColor}
   >
     <StyledIcon className={`bi bi-${icon}`} color={color} />
