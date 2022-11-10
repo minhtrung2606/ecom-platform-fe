@@ -1,5 +1,6 @@
-import styled from "styled-components"
-import { ColorPalette as CP } from "../libs/Colors"
+import Image from 'next/image'
+import styled from 'styled-components'
+import { ColorPalette as CP } from '../libs/Colors'
 
 const ProductCardWrapper = styled.a`
   margin-top: 0.5rem;
@@ -9,6 +10,7 @@ const ProductCardWrapper = styled.a`
   border-bottom-right-radius: 1rem;
   background: ${CP.BaseGray100};
   height: 100%;
+  width: 100%;
   box-shadow: 0 .125rem .25rem ${CP.BaseGray400};
   max-width: 20rem;
   text-decoration: none;
@@ -20,11 +22,14 @@ const ProductCardWrapper = styled.a`
   }
 `
 
-const ProductImg = styled.img`
+const ProductImgWrapper = styled.div`
   min-height: 16rem;
   background-color: ${CP.BaseGray300};
-  display: inline-block;
   width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 `
 
 const ProductContent = styled.div`
@@ -48,7 +53,14 @@ const ProductDesc = styled(ProductContent)`
 
 const ProductCard = () => (
   <ProductCardWrapper>
-    <ProductImg src="/queenflowers-logo.svg" />
+    <ProductImgWrapper>
+      <Image
+        src="/queenflowers-logo.svg"
+        alt="product-image"
+        width={120}
+        height={120}
+      />
+    </ProductImgWrapper>
     <ProductPrice>
       <h4>
         <strong>$29.99</strong>

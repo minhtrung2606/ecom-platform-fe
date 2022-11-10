@@ -1,7 +1,7 @@
 import ProductCard from "./ProductCard"
 
 const ProductCardList = ({ products }) => (
-  <div className="row">
+  <div className="row d-flex align-item-center justify-content-center">
     {products?.map((id) => (
       <div
         key={id}

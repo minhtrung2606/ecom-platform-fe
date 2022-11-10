@@ -64,6 +64,7 @@ const CardView = ({
             iconName={iconName}
             variant={variant}
             inverse
+            size="lg"
           />
         </RoundedIconWrapper>
       )}

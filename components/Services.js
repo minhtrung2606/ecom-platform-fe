@@ -19,7 +19,7 @@ const Services = () => (
         fullHeight
         variant="secondary"
       >
-        Sẵn sàng hỗ trợ 24/7
+        Sẵn sàng hỗ trợ 7/7
       </Card>
     </div>
   </div>

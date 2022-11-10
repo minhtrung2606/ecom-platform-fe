@@ -5,6 +5,7 @@ import styled from 'styled-components'
 import { ColorPalette as CP } from '../libs/Colors'
 
 import Container from './Container'
+import DottedSeparator from './DottedSeparator'
 
 const VARIANT_MAPPING = {
   // variantName: [title color, text color]
@@ -23,9 +24,11 @@ const SIZE_MAPPING = {
 const SectionWrapper = styled.section`
   padding: ${props => props.padding};
   background-color: ${CP.BaseGray200};
+  text-align: center;
+  padding-bottom: 5rem;
 `
 
-const StyledTitle = styled.h2`
+const StyledTitle = styled.h1`
   margin-top: 0;
   color: ${props => props.color || CP.BasePrimary700};
   margin-bottom: 2.5rem;
@@ -50,6 +53,7 @@ const SectionView = ({ title, children, variant = 'primary', size = 'md' }) =>{
             >
               {title}
             </StyledTitle>
+            <DottedSeparator />
           </header>
         )}
         <SectionBody color={textColor}>
