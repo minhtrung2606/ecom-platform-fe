@@ -66,7 +66,6 @@ const StyledP = styled.p`
 
 const HighlightedText = styled.span`
   color: ${CP.BaseSecondary400};
-  font-size: 1.2rem;
 `
 
 const AppFooter = () => (
@@ -77,31 +76,30 @@ const AppFooter = () => (
           <StyledTitle>Lời Nhắn Nhủ</StyledTitle>
           <DottedSeparator color={CP.BaseGray100} />
           <StyledP>
-            Với sứ mệnh &ldquo;mang đến niềm vui và sự hài lòng cho khách hàng&rdquo;
-            QUEEN FLOWERS rất vinh dự và luôn nỗ lực hết mình
+            Với sứ mệnh &ldquo;<HighlightedText>mang đến niềm vui và sự hài lòng cho khách hàng</HighlightedText>&rdquo;
+            Queen Flowers rất vinh dự và luôn nỗ lực hết mình
             để hoàn thành sứ mệnh cao cả mà Shop đã đặt ra.
           </StyledP>
           <StyledP>
-            Đối với QUEEN FLOWERS, bạn sẽ tha hồ lựa chọn những loại hoa tươi khác nhau
+            Đối với Queen Flowers, bạn sẽ tha hồ lựa chọn những loại hoa tươi khác nhau
             được nhập trực tiếp mỗi ngày. Chính vì thế, bạn sẽ hoàn toàn yên tâm không lo
-            hoa héo, hoa cũ, hoa giao trễ giờ...QUEEN FLOWERS lấy
-            &ldquo;Dịch vụ Uy Tín - Tư vấn Nhiệt Tình - Giao hàng Nhanh Chóng&rdquo; để mọi đơn hàng
+            hoa héo, hoa cũ, hoa giao trễ giờ...Queen Flowers lấy
+            &ldquo;<HighlightedText>Dịch vụ Uy Tín - Tư vấn Nhiệt Tình - Giao hàng Nhanh Chóng</HighlightedText>&rdquo; để mọi đơn hàng
             dù gần hay xa đều được hoàn thành nhanh chóng nhất.
           </StyledP>
           <StyledP>
-            Hiện tại, QUEEN FLOWERS giao hoa đến 63 tỉnh thành. Quý khách có thể liên hệ
+            Hiện tại, Queen Flowers giao hoa đến 63 tỉnh thành. Quý khách có thể liên hệ
             đặt hàng qua Zalo để được tư vấn và đặt hàng.
           </StyledP>
         </div>
         <div className="col-xl-7 col-md-6 col-12">
-          <StyledTitle>Về Chúng Tôi</StyledTitle>
+          <StyledTitle>Công ty hoa Queen Flowers</StyledTitle>
           <DottedSeparator color={CP.BaseGray100} />
-          <StyledP><strong>Công ty hoa QUEEN FLOWERS</strong></StyledP>
           <StyledP>
             Số giấy phép ĐKKD: xxxxxxxxxx do sở Kế hoạch và Đầu Tư TPHCM cấp
           </StyledP>
           <StyledP>
-            CEO QUEEN FLOWERS: Mai Trần
+            CEO Queen Flowers: Mai Trần
           </StyledP>
           <StyledP>
             <i className="bi bi-dot"></i>
