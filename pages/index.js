@@ -1,7 +1,5 @@
 import App from '../components/App'
 import Banners from '../components/Banners'
-import Card from '../components/Card'
-import FlexWrapper from '../components/FlexWrapper'
 import ProductCardList from '../components/ProductCardList'
 import Section from '../components/Section'
 import Services from '../components/Services'

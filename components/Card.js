@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 import { ColorPalette } from '../libs/Colors'
-import FlexWrapper from './FlexWrapper'
 import Icon from './Icon'
 
 const CardWrapper = styled.div`

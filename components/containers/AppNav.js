@@ -26,6 +26,10 @@ const StyledNavItem = styled.li`
     padding: 1rem;
     text-decoration: none;
     color: ${ColorPalette.White};
+
+    &:hover {
+      color: ${ColorPalette.White};
+    }
   }
 `
 
