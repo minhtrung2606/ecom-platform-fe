@@ -1,39 +1,64 @@
 import React from 'react'
-import styled from "styled-components"
-import { ColorPalette } from '../libs/Colors'
-import Container from "./containers/Container"
 
-const SectionContainer = styled.section`
-  padding: ${props => props.padding || '2.5rem 0'};
-  background-color: ${props => props.bgColor || 'inherit'};
+import styled from 'styled-components'
+
+import { ColorPalette as CP } from '../libs/Colors'
+
+import Container from './Container'
+
+const VARIANT_MAPPING = {
+  // variantName: [title color, text color]
+  standard: [CP.BaseGray700, CP.BaseGray500],
+  primary: [CP.BasePrimary700, CP.BasePrimary500],
+  secondary: [CP.BaseSecondary700, CP.BaseSecondary500],
+}
+
+const SIZE_MAPPING = {
+  sm: '1rem 0',
+  md: '2rem 0',
+  lg: '3rem 0',
+  xl: '5rem 0',
+}
+
+const SectionWrapper = styled.section`
+  padding: ${props => props.padding};
+  background-color: ${CP.BaseGray200};
 `
 
-const SectionHeader = styled.header`
-  .title {
-    margin-top: 0;
-    color: ${props => props.color || ColorPalette.BasePrimary700};
-    margin-bottom: 2.5rem;
-  }
+const StyledTitle = styled.h2`
+  margin-top: 0;
+  color: ${props => props.color || CP.BasePrimary700};
+  margin-bottom: 2.5rem;
 `
 
-const SectionContent = styled.div`
-  color: ${props => props.color || ColorPalette.BaseGray700};
+const SectionBody = styled.div`
+  color: ${CP.BaseGray900};
 `
 
-const SectionView = ({ title, children, variants }) => (
-  <SectionContainer bgColor={variants?.bgColor} padding={variants?.padding}>
-    <Container>
-      {title && (
-        <SectionHeader color={variants?.color}>
-          <h2 className="title">{title}</h2>
-        </SectionHeader>
-      )}
-      <SectionContent color={variants?.color}>
-        {children}
-      </SectionContent>
-    </Container>
-  </SectionContainer>
-)
+const SectionView = ({ title, children, variant = 'primary', size = 'md' }) =>{
+  const [titleColor, textColor] = VARIANT_MAPPING[variant]
+  const padding = SIZE_MAPPING[size]
+
+  return  (
+    <SectionWrapper padding={padding}>
+      <Container>
+        {title && (
+          <header>
+            <StyledTitle
+              className="title"
+              color={titleColor}
+            >
+              {title}
+            </StyledTitle>
+          </header>
+        )}
+        <SectionBody color={textColor}>
+          {children}
+        </SectionBody>
+      </Container>
+    </SectionWrapper>
+  )
+}
 
 const Section = React.memo(SectionView)
 

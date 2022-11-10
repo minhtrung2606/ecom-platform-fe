@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const BannersContainer = styled.section`
+const BannersWrapper = styled.section`
   min-height: 45rem;
   background-color: gray;
   display: flex;
@@ -14,7 +14,7 @@ const BannersContainer = styled.section`
 `
 
 const Banners = () => (
-  <BannersContainer />
+  <BannersWrapper />
 )
 
 export default Banners

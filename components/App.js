@@ -1,8 +1,9 @@
 import Head from 'next/head'
 import React from 'react'
-import AppFooter from './containers/AppFooter'
-import AppHeader from './containers/AppHeader'
-import AppNav from './containers/AppNav'
+
+import AppFooter from './AppFooter'
+import AppHeader from './AppHeader'
+import AppNav from './AppNav'
 
 const App = ({ children }) => (
   <React.Fragment>

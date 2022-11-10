@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { ColorPalette } from "../libs/Colors"
+import { ColorPalette as CP } from "../libs/Colors"
 
 const ProductCardWrapper = styled.a`
   margin-top: 0.5rem;
@@ -7,35 +7,35 @@ const ProductCardWrapper = styled.a`
   padding: 2rem 0rem;
   border-top-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
-  background: ${ColorPalette.BaseGray100};
+  background: ${CP.BaseGray100};
   height: 100%;
-  box-shadow: 0 .125rem .25rem ${ColorPalette.BaseGray400};
+  box-shadow: 0 .125rem .25rem ${CP.BaseGray400};
   max-width: 20rem;
   text-decoration: none;
   transition: box-shadow 250ms;
 
   &:hover {
-    box-shadow: 0 .5rem 1rem ${ColorPalette.BasePrimary100};
+    box-shadow: 0 .5rem 1rem ${CP.BasePrimary100};
     cursor: pointer;
   }
+`
+
+const ProductImg = styled.img`
+  min-height: 16rem;
+  background-color: ${CP.BaseGray300};
+  display: inline-block;
+  width: 100%;
 `
 
 const ProductContent = styled.div`
   padding: 0 0.5rem;
 `
 
-const ProductImg = styled.img`
-  min-height: 16rem;
-  background-color: ${ColorPalette.BaseGray300};
-  display: inline-block;
-  width: 100%;
-`
-
 const ProductPrice = styled(ProductContent)`
-  color: ${ColorPalette.BasePrimary700};
+  color: ${CP.BasePrimary700};
 `
 const ProductName = styled(ProductContent)`
-  color: ${ColorPalette.BaseGray700};
+  color: ${CP.BaseGray900};
 
   h5 {
     margin-bottom: 0;
@@ -43,7 +43,7 @@ const ProductName = styled(ProductContent)`
 `
 
 const ProductDesc = styled(ProductContent)`
-  color: ${ColorPalette.BaseGray500};
+  color: ${CP.BaseGray500};
 `
 
 const ProductCard = () => (

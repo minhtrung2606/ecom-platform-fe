@@ -1,14 +1,17 @@
 import Link from 'next/link'
+
 import styled from 'styled-components'
-import { ColorPalette } from '../../libs/Colors'
-import { Categories } from '../../mock_data/categories'
+
+import { ColorPalette as CP } from '../libs/Colors'
+import { Categories } from '../mock_data/categories'
+
 import Container from './Container'
 
-const AppNavContainer = styled.nav`
+const AppTopNavWrapper = styled.nav`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: ${ColorPalette.BasePrimary900};
+  background-color: ${CP.BasePrimary900};
 `
 
 const StyledNav = styled.ul`
@@ -25,16 +28,27 @@ const StyledNavItem = styled.li`
     display: inline-block;
     padding: 1rem;
     text-decoration: none;
-    color: ${ColorPalette.White};
+    color: ${CP.White};
 
     &:hover {
-      color: ${ColorPalette.White};
+      color: ${CP.White};
     }
   }
 `
 
+const StyledNavLink = styled(Link)`
+  display: inline-block;
+  padding: 1rem;
+  text-decoration: none;
+  color: ${CP.White};
+
+  &:hover {
+    color: ${CP.White};
+  }
+`
+
 const AppNav = () => (
-  <AppNavContainer data-testid="app-nav">
+  <AppTopNavWrapper data-testid="app-nav">
     <Container>
       <StyledNav data-testid="nav">
         {Categories?.map(cat => (
@@ -42,14 +56,14 @@ const AppNav = () => (
             key={`${cat.id}-${cat.slug}`}
             data-testid="nav-item"
           >
-            <Link href={`/category/${encodeURIComponent(cat.slug)}`}>
+            <StyledNavLink href={`/category/${encodeURIComponent(cat.slug)}`}>
               {cat.name}
-            </Link>
+            </StyledNavLink>
           </StyledNavItem>
         ))}
       </StyledNav>
     </Container>
-  </AppNavContainer>
+  </AppTopNavWrapper>
 )
 
 export default AppNav

@@ -1,7 +1,8 @@
 import styled from 'styled-components'
+
 import Container from './Container'
 
-const AddHeaderContainer = styled.div`
+const AddHeaderWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -15,9 +16,9 @@ export const StyledLogo = styled.img`
 
 const AppHeader = () => (
   <Container data-testid="app-header">
-    <AddHeaderContainer>
+    <AddHeaderWrapper>
       <StyledLogo src="/queenflowers-logo.svg" alt="Queen Flowers" />
-    </AddHeaderContainer>
+    </AddHeaderWrapper>
   </Container>
 )
 
