@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { ColorPalette as CP } from '../libs/Colors'
 
 const ProductCardWrapper = styled.a`
+  position: relative;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   padding: 2rem 0rem;
@@ -15,6 +16,7 @@ const ProductCardWrapper = styled.a`
   max-width: 20rem;
   text-decoration: none;
   transition: box-shadow 250ms;
+  padding-bottom: 3rem;
 
   &:hover {
     box-shadow: 0 .5rem 1rem ${CP.BasePrimary100};
@@ -37,6 +39,7 @@ const ProductContent = styled.div`
 `
 
 const ProductPrice = styled(ProductContent)`
+  margin-top: 1rem;
   color: ${CP.BasePrimary700};
 `
 const ProductName = styled(ProductContent)`
@@ -47,8 +50,23 @@ const ProductName = styled(ProductContent)`
   }
 `
 
+const CtaSection = styled.div`
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 0.5rem;
+  width: 100%;
+  border-bottom-right-radius: 1rem;
+  color: ${CP.BaseSecondary700};
+`
+
 const ProductDesc = styled(ProductContent)`
   color: ${CP.BaseGray500};
+`
+
+const StyledHr = styled.hr`
+  color: ${CP.BaseGray900};
+  margin: 0;
 `
 
 const ProductCard = () => (
@@ -62,14 +80,16 @@ const ProductCard = () => (
       />
     </ProductImgWrapper>
     <ProductPrice>
-      <h4>
-        <strong>$29.99</strong>
-      </h4>
+      <h4><strong>$29.99</strong></h4>
     </ProductPrice>
     <ProductName>
-      <h5><strong>Lorem Ipsum</strong></h5>
+      <h5>Lorem Ipsum</h5>
     </ProductName>
     <ProductDesc>This is a product</ProductDesc>
+    <CtaSection>
+      <StyledHr />
+      Liên hệ đặt hàng
+    </CtaSection>
   </ProductCardWrapper>
 )
 
